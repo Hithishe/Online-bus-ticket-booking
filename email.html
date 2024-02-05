@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+               <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>BUS TICKET</h1>
+            </div>
+            <br>
+            <form action="JavaSendMail" method="post">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" required="" placeholder="Name" name="name" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" required="" placeholder="Email" name="email" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>From</td>
+                        <td><label for="stations">Select a Station:</label>
+<select id="stationsf" name="stationsf">
+    <option value="Banashankari">Banashankari</option>
+    <option value="Majestic">Majestic</option>
+    <option value="Yelahanka">Yelahanka</option>
+    <option value="Yeshwanthpura">Yeshwanthpura</option>
+    <option value="K R Market">K R Market</option>
+</select></td>        
+                    </tr>
+  
+                    <tr>
+                        <td>To</td>
+                                          <td><label for="stations">Select a Station:</label>
+<select id="stationst" name="stationst">
+    <option value="Banashankari">Banashankari</option>
+    <option value="Majestic">Majestic</option>
+    <option value="Yelahanka">Yelahanka</option>
+    <option value="Yeshwanthpura">Yeshwanthpura</option>
+    <option value="K R Market">K R Market</option>
+</select></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="submit" class="btn btn-primary" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </body>
+</html>
