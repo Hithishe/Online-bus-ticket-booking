@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUS TICKET</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <script>
+function openTab(event, tabName) {
+  // Get all elements with class="tab-content" and hide them
+  const tabContents = document.getElementsByClassName('tab-content');
+  for (let i = 0; i < tabContents.length; i++) {
+    tabContents[i].style.display = 'none';
+  }
+  // Get all elements with class="tab" and remove the active class
+  const tabs = document.getElementsByClassName('tab');
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove('active');
+  }
+
+  // Show the current tab and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = 'block';
+  event.currentTarget.classList.add('active');
+}
+
+// By default, show the first tab
+document.getElementById('Home').style.display = 'block';
+document.querySelector('.tab').classList.add('active');
+</script>
+  </head>
+<body background="C:\Users\Keerthana S\Desktop\html\image.jpg">
+<CENTER><h1><font color=white>ONLINE BUS TICKET BOOKING SYSTEM</font></H1></CENTER>
+  <div class="tabs">
+    <button class="tab" onclick="openTab(event, 'Home')"> <i class="fa-solid fa-house"></i> HOME</button>
+    <button class="tab" onclick="window.location.href='Hello.html'"> <i class="fa-solid fa-user"></i>LOGIN/REGISTER</button>
+    
+    <button class="tab" onclick="openTab(event, 'Help')"> <i class="fa-solid fa-phone"></i> CONTACT US</button>
+    
+  </div>
+  
+  <div id="Home" class="tab-content">
+<!-- Content for Tab 1 -->
+    <div class="cssmarquee">
+    <h1>WELCOME TO ONLINE BUS TICKET BOOKING SYSTEM</h1></div>
+   
+  </div>
+
+  <div id="Help" class="tab-content">
+    <!-- Content for Tab 1 -->
+    <h2>CONTACT US</h2>
+    <p><h2>For any queries,contact:<br>busticket123@gmail.com
+      <br> ph no:080-263251</h2></p>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
